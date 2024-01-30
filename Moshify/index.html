@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -30,17 +31,21 @@
     </header>
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
+        <header class="block__header hero__content" data-aos="slide-up">
           <h1 class="block__heading">Cloud Hosting for Pros</h1>
           <p class="hero__tagline">
             Deploy your websites in less than 60 seconds
           </p>
           <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
         </header>
-        <img class="hero__image" src="Images/banner.png" alt="" />
+        <img
+          class="hero__image"
+          src="Images/banner.png"
+          data-aos="slide-down"
+        />
       </div>
     </section>
-    <section class="block container block-domain">
+    <section class="block container block-domain" data-aos="flip-up">
       <header class="block__header">
         <h2>Starting at $9 per month</h2>
         <p>
@@ -69,7 +74,7 @@
         <li>.xyz $10</li>
       </ul>
     </section>
-    <section class="block container block-plans">
+    <section class="block container block-plans" data-aos="fade-up">
       <div class="grid grid--1x3">
         <div class="plan">
           <div class="card card--secondary">
@@ -142,7 +147,7 @@
         </p>
       </header>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="Images/sprite.svg#easy "></use>
@@ -156,7 +161,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-left">
           <source
             type="image/webp"
             srcset="Images/easy.webp 1x, Images/easy@2x.webp 2x"
@@ -250,12 +255,15 @@
         </picture>
       </article>
     </section>
-    <section class="block block--dark block--skewed-right block-showcase">
-      <header class="block__header">
+    <section
+      class="block block--dark block--skewed-right block-showcase"
+      data-aos="fade-up"
+    >
+      <header class="block__header" data-aos="fade-right">
         <h2>User-friendly Control Panel</h2>
       </header>
       <div class="container grid grid--1x2">
-        <picture class="block-showcase__image">
+        <picture class="block-showcase__image" data-aos="fade-right">
           <source
             type="image/webp"
             srcset="Images/ipad.webp 1x, Images/ipad@2x.webp 2x"
@@ -266,7 +274,7 @@
           />
           <img src="Images/ipad.png" alt="" />
         </picture>
-        <ul class="list">
+        <ul class="list" data-aos="fade-left">
           <li>
             <div class="media">
               <div class="media__image">
@@ -328,7 +336,7 @@
       </div>
     </section>
     <section class="block">
-      <header class="block__header">
+      <header class="block__header" data-aos="flip-up">
         <h2>What Our Customers are Saying</h2>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et molestiae
         vitae tenetur quae nulla commodi eligendi. Itaque cumque culpa saepe.
@@ -336,7 +344,7 @@
       <div class="container">
         <div class="card testimonial">
           <div class="grid grid--1x2">
-            <div class="testimonial__image">
+            <div class="testimonial__image" data-aos="flip-right">
               <img
                 src="images/testimonial.jpg"
                 alt="A happy, smiling customer"
@@ -347,7 +355,7 @@
                 </svg>
               </span>
             </div>
-            <blockquote class="quote">
+            <blockquote class="quote" data-aos="flip-left">
               <p class="quote__text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Incidunt optio officiis dolore earum error eaque perferendis
@@ -371,7 +379,7 @@
         </div>
       </div>
     </section>
-    <div class="container">
+    <div class="container" data-aos="zoom-in-up">
       <div class="callout callout--primary callout-signup">
         <div class="grid grid--1x2">
           <div class="callout__content">
@@ -456,5 +464,9 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
