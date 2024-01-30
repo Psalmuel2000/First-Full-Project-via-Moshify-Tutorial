@@ -862,3 +862,9 @@ a {
     font-size: 1.6rem;
   }
 }
+
+/* Callout SignUp */
+
+.callout-signup {
+  transform: translateY(5rem);
+}
